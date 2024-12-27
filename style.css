@@ -1,0 +1,6 @@
+.myDiv {
+    border: 5px outset red;
+    background-color: rgb(239, 242, 243);
+    text-align: center;
+    margin-top: 10px;
+  }
