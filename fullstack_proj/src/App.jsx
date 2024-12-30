@@ -4,6 +4,7 @@ import Contact from './Components/FunctionalComponent/Contact'
 import Gallery from './Components/FunctionalComponent/Gallery'
 import Home from './Components/FunctionalComponent/Home'
 import NavBar from './Components/FunctionalComponent/Navbar'
+import Footer from './Components/FunctionalComponent/Footer'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 function App() {
    return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='Contact' element={<Contact />}/>
       <Route path='class' element={<ClassCompEg/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   )
 }
