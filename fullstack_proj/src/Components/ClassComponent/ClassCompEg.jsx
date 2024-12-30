@@ -1,9 +1,11 @@
-import Recat from "react";
+import React from "react";
 class ClassCompEg extends React.Component{
     render(){
-        return {
-            <h1>This is class comp example</h1>
-        }
+        return (
+            <div>
+            <h1>This is class Components</h1>
+            </div>
+        )
     }
 }
-export default ClassCompEg
+export default ClassCompEg;
