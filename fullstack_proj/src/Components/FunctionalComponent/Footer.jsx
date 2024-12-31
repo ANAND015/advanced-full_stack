@@ -4,7 +4,7 @@ const Footer =()=>{
         <div className="container">
             <div>
                 <form action="">
-                <label htmlFor="">Name</label>\
+                <label htmlFor="">Name</label>
                 <input type="text" />
                 <label htmlFor="">Email</label>
                 <input type="email"  />

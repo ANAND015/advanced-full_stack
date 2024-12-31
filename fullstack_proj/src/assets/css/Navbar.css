@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    background-color: chocolate;
+}
+
+
+ul{
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10px;
+    gap: 100px;
+}
+
+li{
+    cursor:pointer;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+li:hover{
+    background-color: antiquewhite;   
+    color: chocolate; 
+    padding: 4px;
+    border-radius: 5px;
+}
+h1{
+    align-items: center;
+}
+p{
+    font-size: large;
+}

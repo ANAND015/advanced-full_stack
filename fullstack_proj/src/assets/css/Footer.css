@@ -1,12 +1,4 @@
-.container {
-    margin-top: 100px;
-    bottom: 0;
-    background-color: black;
-    height: 30vh;
-    display: flex;
-    gap: 150px;
-  }
-  
+
   form {
     margin-top: 70px;
   }
