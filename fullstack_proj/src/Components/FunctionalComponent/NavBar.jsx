@@ -11,6 +11,10 @@ var NavBar =()=>{
                <Link to="Home"><li>Home</li></Link> 
                <Link to="Gallery"> <li>Gallery</li></Link>
                <Link to="About"><li>About</li></Link>
+               <Link to="UseEffect"> <li>Use-Effect</li></Link>
+               <Link to="UseRef"> <li>Use-Ref</li></Link>
+               <Link to="UseContext"> <li>Use-Context</li></Link>
+               <Link to="UseMemo"> <li>Use-Memo</li></Link>
                <Link to="COntact"> <li>Contact</li></Link>
             </ul>
             </div>

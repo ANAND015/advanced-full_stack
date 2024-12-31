@@ -1,4 +1,10 @@
-
+.ct{
+  text-align: justify;
+  background-color:#04aa6d;
+  display: flex;
+  padding-left: 10px;
+  gap: 100px;
+}
   form {
     margin-top: 70px;
   }
@@ -15,10 +21,10 @@
     border: none;
     margin-left: 200px;
     margin-top: 20px;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 10px 30px;
     background-color: #04aa6d;
-    color: white;
+    color: black;
   }
   
   .footer{
@@ -26,8 +32,13 @@
   }
   .main {
     color: white;
+    gap: 40 px;
   }
   .root {
     color: white;
+    gap: 40px;
   }
+h4{
+  color:darkred;
+}
   

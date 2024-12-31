@@ -1,7 +1,7 @@
 import "../../assets/css/Footer.css"
 const Footer =()=>{
     return (
-        <div className="container">
+        <div className="ct">
             <div>
                 <form action="">
                 <label htmlFor="">Name</label>
@@ -17,7 +17,6 @@ const Footer =()=>{
                     <h3>News</h3>
                     <h3>Partners</h3>
                     <h3>About us</h3>
-                    <h3>Contact us</h3>
                     <h3>Terms of use</h3>
             </div>
             <div className="main">
