@@ -1,8 +1,9 @@
-const About =(props) =>{
+const About =() =>{
     return(
         <section>
             <h1>This is my About Page</h1> 
-            <h2>I am studying in {props.college}</h2>
+            <h2>I am studying in{} </h2>
+            <p></p>
         </section>
     )
 }
