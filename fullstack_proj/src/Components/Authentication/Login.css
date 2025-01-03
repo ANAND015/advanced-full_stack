@@ -1,0 +1,98 @@
+/* Login.css */
+
+/* Container styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card design */
+  .login-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Input fields */
+  .login-field {
+    margin-bottom: 20px;
+  }
+  
+  .login-field label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .login-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-field input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Buttons */
+  .login-btn, .signup-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .login-btn {
+    background-color: #4caf50;
+    color: white;
+    margin-left: 5px;
+
+  }
+  
+  .login-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-btn {
+    background-color: #007bff;
+    color: white;
+    margin-left: 5px;
+
+  }
+  
+  .signup-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Text */
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  

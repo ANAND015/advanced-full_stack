@@ -9,6 +9,8 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import UseEffect from './Components/FunctionalComponent/UseEffect'
 import UseRef from './Components/FunctionalComponent/UseRef'
 import UseMemo from './Components/FunctionalComponent/UseMemo'
+import Signup from './Components/Authentication/Signup'
+import Login from './Components/Authentication/Login'
 function App() {
    return (
     <BrowserRouter>
@@ -21,7 +23,11 @@ function App() {
       <Route path='class' element={<ClassCompEg/>}/>
       <Route path='UseEffect' element={<UseEffect/>}/> 
       <Route path='UseRef' element={<UseRef/>}/> 
-      <Route path='UseMemo' element={<UseMemo/>}/> 
+      <Route path='UseMemo' element={<UseMemo/>}/>
+      <Route path='SignUp' element={<Signup/>}/>
+      <Route path='Login' element={<Login/>}/>
+
+
     </Routes>
     <Footer/>
     </BrowserRouter>

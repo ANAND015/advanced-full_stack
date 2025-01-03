@@ -31,14 +31,15 @@ mdb
 // });
 
 app.post('/signup',(req,res)=>{
-    var {firstName,lastName,email}=req.body
-    console.log(firstName,lastName,email);
+    // var {firstName,lastName,email}=req.body
+    // console.log(firstName,lastName,email);
     try{
-      var newUser=new User({
-        firstName:firstName,
-        lastName:lastName,
-        email:email
-      })
+      // var newUser=new User({
+      //   firstName:firstName,
+      //   lastName:lastName,
+      //   email:email
+      // })
+      var newUser=new User(req.body)
       newUser.save()
       res.status(200).send("User Added Successfully")
       console.log("User Added Successfully")
@@ -57,6 +58,7 @@ app.post('/admin',(req,res)=>{
       lastName:lastName,
       email:email
     })
+    
     newAdmin.save();
     res.status(200).send("Added to Admin Successfully")
     console.log("Successfully added")
@@ -75,6 +77,24 @@ app.get('/getsignup',async (req,res)=>{
   catch(err){
     console.log(err);
     res.send(err)
+  }
+})
+
+app.post('/login',async (req,res)=>{
+  var {email,password}=req.body
+  try{
+    var existingUser=await User.findOne({email:email});
+    if(existingUser){
+      if(existingUser.password!=password){
+        res.json({message:"Invalid Credentails",isLoggedIn:true});
+      }
+      else{
+        res.json({message:"Login Successful",isLoggedIn:false});
+      }
+    }
+  }
+  catch(err){
+    console.log("Login failed");
   }
 })
 

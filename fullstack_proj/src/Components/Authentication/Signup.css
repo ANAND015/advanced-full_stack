@@ -1,0 +1,96 @@
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .two {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 5px;
+  }
+  
+  .two h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .three, .four {
+    margin-bottom: 20px;
+  }
+  
+  .three label, .four label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .three input, .four input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 5px;
+  }
+  
+  .three input:focus, .four input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .five, .six {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+  }
+  
+  .five {
+    background-color: #4caf50;
+    color: white;
+    margin-left: 5px;
+  }
+  
+  .five:hover {
+    background-color: #45a049;
+    text-decoration: #0056b3;
+  }
+  
+  .six {
+    background-color: #007bff;
+    color: white;
+    margin-left: 5px;
+    width: 94%;
+    text-align: center;
+  }
+  
+  .six:hover {
+    background-color: #0056b3;
+    text-decoration:double;
+
+  }
+  
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
