@@ -2,20 +2,25 @@ import { Link } from "react-router-dom"
 import "../../assets/css/Navbar.css"
 
 var NavBar =()=>{
+    const name = localStorage.getItem("userName")
     return(
     <header>
         <nav>
             <div className="container">
-            <h1>FullSt@ck</h1>
+            <h1>{name}</h1>
             <ul>
-               <Link to="Home"><li>Home</li></Link> 
-               <Link to="Gallery"> <li>Gallery</li></Link>
-               <Link to="About"><li>About</li></Link>
-               <Link to="UseEffect"> <li>Use-Effect</li></Link>
-               <Link to="UseRef"> <li>Use-Ref</li></Link>
-               <Link to="UseContext"> <li>Use-Context</li></Link>
-               <Link to="UseMemo"> <li>Use-Memo</li></Link>
-               <Link to="COntact"> <li>Contact</li></Link>
+               <Link to="/home"><li>Home</li></Link> 
+               <Link to="/gallery"> <li>Gallery</li></Link>
+               <Link to="/about"><li>About</li></Link>
+               <Link to="/useEffect"> <li>Use-Effect</li></Link>
+               <Link to="/useRef"> <li>Use-Ref</li></Link>
+               <Link to="/useContext"> <li>Use-Context</li></Link>
+               <Link to="/useMemo"> <li>Use-Memo</li></Link>
+               <Link to="/contact"> <li>Contact</li></Link>
+               <Link to="/signup"> <li>Signup</li></Link>
+               <Link to="/login"> <li>Login</li></Link>
+
+
             </ul>
             </div>
         </nav>

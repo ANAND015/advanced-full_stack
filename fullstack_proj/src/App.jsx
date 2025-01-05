@@ -11,21 +11,22 @@ import UseRef from './Components/FunctionalComponent/UseRef'
 import UseMemo from './Components/FunctionalComponent/UseMemo'
 import Signup from './Components/Authentication/Signup'
 import Login from './Components/Authentication/Login'
+
 function App() {
    return (
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<NavBar/>} />
-      <Route path='Home' element={ <Home/>}/>
-      <Route path='Gallery' element={<Gallery/>}/>
-      <Route path='About' element={<About college="Kongu Engineering College"/>}/>
-      <Route path='Contact' element={<Contact />}/>
-      <Route path='class' element={<ClassCompEg/>}/>
-      <Route path='UseEffect' element={<UseEffect/>}/> 
-      <Route path='UseRef' element={<UseRef/>}/> 
-      <Route path='UseMemo' element={<UseMemo/>}/>
-      <Route path='SignUp' element={<Signup/>}/>
-      <Route path='Login' element={<Login/>}/>
+      <Route path='/home' element={ <Home/>}/>
+      <Route path='/gallery' element={<Gallery/>}/>
+      <Route path='/about' element={<About college="Kongu Engineering College"/>}/>
+      <Route path='/contact' element={<Contact />}/>
+      <Route path='/class' element={<ClassCompEg/>}/>
+      <Route path='/useEffect' element={<UseEffect/>}/> 
+      <Route path='/useRef' element={<UseRef/>}/> 
+      <Route path='/useMemo' element={<UseMemo/>}/>
+      <Route path='/signUp' element={<Signup/>}/>
+      <Route path='/login' element={<Login/>}/>
 
 
     </Routes>

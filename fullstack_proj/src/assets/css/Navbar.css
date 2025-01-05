@@ -17,7 +17,7 @@ ul{
     background-color: chocolate;
     color: aliceblue;
     padding: 10px;
-    gap: 100px;
+    gap: 60px;
 }
 
 li{
@@ -36,5 +36,5 @@ h1{
     align-items: center;
 }
 p{
-    font-size: large;
+    font-size:x-large;
 }

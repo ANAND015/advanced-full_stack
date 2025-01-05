@@ -2,21 +2,23 @@ const express = require("express");
 const path = require("path");
 const app = express();
 var mdb = require("mongoose");
-
+var cors=require("cors")
+var env=require('dotenv')
+env.config()
 const PORT = 3001;
 var User =require("./Models/users")
 var Admin =require("./Models/admin")
 
 app.use(express.json())
+app.use(cors())
 mdb
-  .connect("mongodb://localhost:27017/")
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("MongoDb_Connection_successfull");
   })
   .catch((err) => {
     console.log("Check your connection string");
   });
-
 // app.get("/", (req, res) => {
 //   res.send("Welcome to Backend Server");
 // });
@@ -50,14 +52,15 @@ app.post('/signup',(req,res)=>{
 
 })
 app.post('/admin',(req,res)=>{
-  var{firstName,lastName,email}=req.body
-  console.log(firstName,lastName,email)
+  // var{firstName,lastName,email,password}=req.body
+  // console.log(firstName,lastName,email,password)
   try{
-    var newAdmin=new Admin({
-      firstName:firstName,
-      lastName:lastName,
-      email:email
-    })
+    // var newAdmin=new Admin({
+    //   firstName:firstName,
+    //   lastName:lastName,
+    //   email:email,
+    //   password:password
+    // })
     
     newAdmin.save();
     res.status(200).send("Added to Admin Successfully")
@@ -86,16 +89,25 @@ app.post('/login',async (req,res)=>{
     var existingUser=await User.findOne({email:email});
     if(existingUser){
       if(existingUser.password!=password){
-        res.json({message:"Invalid Credentails",isLoggedIn:true});
+        res.json({message:"Invalid Credentails",isLoggedIn:false});
       }
       else{
-        res.json({message:"Login Successful",isLoggedIn:false});
+        res.json({message:"Login Successful",isLoggedIn:true,firstName:existingUser.firstName});
       }
+    }else{
+      res.json({message:"Login Failed" , isLoggedIn:false})
     }
   }
   catch(err){
     console.log("Login failed");
   }
+})
+
+app.post('/footer',(req,res)=>{
+  const {Name,Email}=req.body;
+  try{
+
+  }catch(err){}
 })
 
 app.listen(PORT, () => {
