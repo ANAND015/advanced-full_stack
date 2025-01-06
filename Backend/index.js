@@ -120,6 +120,7 @@ app.post("/footer", async (req, res) => {
 
     res.status(200).send("Subscribed Successfully");
     console.log("Footer Submitted Successfully");
+    alert("Subcribed Successfully");
   } catch (err) {
     console.error("Error in /footer:", err.message);
     res.status(500).send("Failed to subscribe.");

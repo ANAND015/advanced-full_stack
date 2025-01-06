@@ -8,7 +8,7 @@ const Footer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const req = await axios.post("http://localhost:3001/footer", {
+      const req = await axios.post("https://advanced-full-stack.onrender.com/footer", {
         Name,
         Email,
       });

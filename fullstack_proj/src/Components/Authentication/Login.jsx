@@ -8,7 +8,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const req = await axios.post("http://localhost:3001/login", {
+      const req = await axios.post("https://advanced-full-stack.onrender.com/login", {
         email,
         password,
       });

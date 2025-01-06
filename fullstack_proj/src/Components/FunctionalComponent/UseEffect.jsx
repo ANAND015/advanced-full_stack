@@ -16,7 +16,7 @@ var UseEffect = () => {
   //         <h2>Text typed is {text}</h2>
   //     </section>
   // )
-  var [post, setPost] = useState([]);
+  //var [post, setPost] = useState([]);
   var [recipes, setRecipes] = useState([]);
   useEffect(() => {
     axios
