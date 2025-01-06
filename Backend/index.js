@@ -8,6 +8,7 @@ env.config()
 const PORT = 3001;
 var User =require("./Models/users")
 var Admin =require("./Models/admin")
+var Footer=require("./Models/footer")
 
 app.use(express.json())
 app.use(cors())
@@ -103,12 +104,27 @@ app.post('/login',async (req,res)=>{
   }
 })
 
-app.post('/footer',(req,res)=>{
-  const {Name,Email}=req.body;
-  try{
+app.post("/footer", async (req, res) => {
+  try {
+    const { Name, Email } = req.body;
+    console.log(req.body)
 
-  }catch(err){}
-})
+    // Validate input
+    if (!Name || !Email) {
+      return res.status(400).send("Name and Email are required.");
+    }
+
+    // Save to database
+    const newFooter = new Footer({ Name, Email });
+    await newFooter.save();
+
+    res.status(200).send("Subscribed Successfully");
+    console.log("Footer Submitted Successfully");
+  } catch (err) {
+    console.error("Error in /footer:", err.message);
+    res.status(500).send("Failed to subscribe.");
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Backend Server Started \n Url: http://localhost:${PORT}`);

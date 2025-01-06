@@ -18,13 +18,16 @@
   }
   
   button {
-    border: none;
+    border:black;
     margin-left: 200px;
     margin-top: 20px;
     text-decoration: underline;
     padding: 10px 30px;
     background-color: #04aa6d;
     color: black;
+    background-color: #4caf50;
+    color: white;
+    margin-left: 5px;
   }
   
   .footer{
